@@ -1,0 +1,751 @@
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*BOOTSRAP NAVBAR*/
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #060606;
+  margin-right: 21.3px;
+  padding-top: 35px;
+}
+
+.navbar .navbar-nav {
+  margin: 0 auto;
+  margin-left: 60px;
+}
+
+.navbar {
+  height: 92.51px;
+}
+
+.navbar .navbar-brand img {
+  margin-left: 47px;
+}
+
+.navbar .navbar-toggler {
+  color: black;
+  outline: none;
+}
+
+.language {
+  padding-left: 27px;
+}
+
+/*HEADER*/
+header {
+  background-image: url("../img/SparkleVideo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -47px;
+  height: 675px;
+  text-align: center;
+}
+
+.ripped-border {
+  width: 100%;
+  margin-top: -9px;
+}
+
+.fixed-anchor-link {
+  color: #2f4858;
+  font-size: 40px;
+  right: 1%;
+  margin-right: 40px;
+  position: fixed;
+  top: 120px;
+  opacity: 0;
+  z-index:4;
+}
+
+.fixed-anchor-link:hover {
+  color: #ffa800;
+}
+
+.playButton {
+  width: 86px;
+}
+
+header div {
+  background-color: white;
+  border-radius: 100%;
+  height: 83px;
+  width: 86px;
+  margin: 0 auto;
+  margin-top: 246px;
+}
+
+/* SECTION ONE*/
+
+.one p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #2f4858;
+  width: 48%;
+  margin: 0 auto;
+  margin-top: 252.35px;
+  margin-bottom: 205.67px;
+  padding-left: 5px;
+}
+
+/* SECTION TWO*/
+
+.two {
+  height: 393px;
+  position: relative;
+}
+
+.top-border {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  margin-top: -3px;
+}
+
+.bottom-border {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.images {
+  padding-top: 10px;
+}
+.firstImg {
+  background-image: url("../img/Zanda_1.jpg");
+  background-size: cover;
+  height: 355px;
+  width: 24%;
+  float: left;
+}
+
+.secondImg {
+  background-image: url("../img/Sibilla_4.jpg");
+  height: 364px;
+  width: 24.5%;
+  float: left;
+  background-size: cover;
+}
+
+.thirdImg {
+  background-image: url("../img/Brinuma_meita-15.jpg");
+  height: 184px;
+  background-size: cover;
+}
+
+.fourthImg {
+  background-image: url("../img/Alina_1\ 1.jpg");
+  height: 184px;
+  background-size: cover;
+}
+
+.fifthImg {
+  background-image: url("../img/Anda_2\ 1.jpg");
+  height: 383px;
+  width: 29.7%;
+  float: left;
+  background-size: cover;
+  margin-top: -12px;
+}
+
+.thirdCol {
+  float: left;
+  width: 21.8%;
+}
+
+/*SECTION THREE*/
+
+h3 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #2f4858;
+  margin-top: 190px;
+  margin-bottom: 53px;
+}
+
+.three button {
+  height: 50px;
+  width: 233px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #ffa800;
+  border-radius: 100px;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  width: 75.7%;
+  margin: 0 auto;
+}
+
+/* SECTION FOUR*/
+
+h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  color: #2f4858;
+  margin-top: 152px;
+  margin-bottom: 51px;
+}
+
+.four textarea {
+  display: block;
+}
+
+.text-input,
+textarea {
+  background: rgba(196, 196, 196, 0.4);
+  border-radius: 6px;
+  border: none;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+
+  color: #2f4858;
+  margin-bottom: 15px;
+  height: 43px;
+  width: 100%;
+  padding-top: 6px;
+  padding-left: 12px;
+}
+
+textarea {
+  height: 232px;
+}
+
+.form-wrapper {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.left-column {
+  padding-right: 10px;
+}
+
+.right-column {
+  padding-left: 10px;
+}
+
+.form-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #2f4858;
+}
+
+.checkbox {
+  margin-top: 20px;
+  margin-right: 23px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 90%;
+  display: block;
+  white-space: nowrap;
+  margin-bottom: 50px;
+}
+
+label span {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  position: relative;
+  margin-top: 16px;
+}
+
+.four button {
+  height: 62px;
+  width: 182px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background: #ffa800;
+  border-radius: 100px;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  margin-bottom: 140px;
+}
+
+/*SECTION FIVE*/
+
+.five {
+  background: #ffcb66;
+  height: 500px;
+  z-index: -1;
+}
+
+.five h3 {
+  text-align: center;
+  margin-top: 57px;
+}
+
+.six-top-border {
+  margin-top: -2px;
+  width: 100%;
+}
+
+.logo-column {
+  width: 50%;
+  float: left;
+}
+.left-logos {
+  width: 60%;
+}
+
+.right-logos {
+  width: 40%;
+  float: left;
+}
+
+.logo-one img {
+  margin-left: 40%;
+  margin-top: 30px;
+}
+
+.sem-logo {
+  padding: 9px 0px 0px 9px;
+}
+
+.border-img {
+  position: absolute;
+}
+
+.logo-wrapper {
+  width: 79.61px;
+  height: 79.83px;
+  float: left;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+.letter-wrapper {
+  margin-left: 43%;
+  margin-top: 50px;
+}
+
+.sem-letter {
+  margin-left: -2px;
+}
+
+.logo-three img {
+  margin-left: -10.5%;
+  margin-top: 30px;
+}
+
+.logo-four img {
+  margin-left: 9%;
+  margin-top: 10px;
+}
+
+/*SECTION SIX*/
+
+.six {
+  background-color: #2f4858;
+  height: 100%;
+  margin-top: -65px;
+}
+.footer div {
+  height: 20px;
+  clear: both;
+}
+.golden-logo {
+  margin-top: 33px;
+  margin-left: 16%;
+}
+
+.links a,
+.footer-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.links a {
+  display: block;
+  text-decoration: none;
+  padding-left: 30px;
+}
+
+.ideja {
+  padding-top: 30px;
+  padding-bottom: 26px;
+}
+
+.link2 {
+  padding-bottom: 23px;
+}
+
+.link3 {
+  padding-bottom: 20px;
+}
+
+.link4 {
+  padding-bottom: 18px;
+}
+
+.link4 {
+  padding-bottom: 18px;
+}
+
+.link5 {
+  padding-bottom: 25px;
+}
+
+.heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.info1 p {
+  margin-left: -45px;
+}
+
+.account {
+  margin-top: -10px;
+}
+
+.info2 p {
+  text-align: right;
+  margin-right: 40px;
+}
+
+.adress {
+  margin-top: -10px;
+  margin-left: -15px;
+}
+
+.copyright {
+  margin-left: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  float: left;
+  margin-top: -5px;
+}
+
+.politika {
+  float: right;
+  margin-right: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.fbicon,
+.insticon {
+  float: right;
+  margin-top: 37px;
+}
+
+.insticon {
+  margin-right: 35px;
+}
+
+.fbicon {
+  margin-right: 30px;
+}
+
+.blue-border {
+  fill: #ffcb66;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 430px) {
+  header {
+    height: 169px;
+  }
+
+  header div {
+    margin-top: 0px;
+  }
+
+  .one p {
+    width: 80%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .firstImg,
+  .secondImg,
+  .thirdCol,
+  .fifthImg {
+    width: 50%;
+    height: 174px;
+  }
+
+  .thirdImg,
+  .fourthImg {
+    height: 87px;
+  }
+  .fifthImg {
+    margin-top: 0px;
+  }
+  .two {
+    height: 350px;
+  }
+
+  .images {
+    padding-top: 0px;
+  }
+
+  .form-wrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 430px) {
+  .firstImg,
+  .secondImg,
+  .thirdCol,
+  .fifthImg {
+    height: 216px;
+  }
+  .thirdImg,
+  .fourthImg {
+    height: 104px;
+  }
+
+  .two {
+    height: 220px;
+  }
+
+  .images {
+    padding-top: 0px;
+  }
+
+  .fifthImg {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .ripped-border {
+    margin-top: -20px;
+  }
+  .left-column {
+    padding-right: 15px;
+  }
+
+  .right-column {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .left-logos {
+    width: 100%;
+  }
+
+  .right-logos {
+    width: 60%;
+    margin-left: 25%;
+    margin-top: 30px;
+  }
+
+  .logo-four img {
+    margin-left: 50%;
+  }
+  .logo-three img {
+    margin-top: -3px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .logo-one img,
+  .logo-three img {
+    width: 100px;
+  }
+
+  .logo-four img {
+    width: 60px;
+  }
+
+  .sem-letter {
+    height: 15px;
+  }
+
+  .logo-wrapper,
+  .border-img {
+    width: 40px;
+  }
+
+  .sem-logo {
+    width: 35px;
+    padding: 5px 0px 0px 5px;
+  }
+
+  .letter-wrapper {
+    margin-top: 35px;
+    margin-left: 15%;
+  }
+  .six-top-border {
+    margin-top: -16px;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .links,
+  .info1 {
+    display: none;
+  }
+
+  .info2 p {
+    text-align: left;
+  }
+
+  .adress {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .copyright,
+  .politika {
+    display: block;
+    float: none;
+    margin-left: 17px;
+  }
+
+  .fbicon,
+  .insticon {
+    float: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1181px) {
+  .blue-border {
+    margin-top: -35px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .navbar .navbar-nav {
+    margin-left: -5px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar .navbar-brand img {
+    margin-top: -15px;
+  }
+}
